@@ -1,20 +1,16 @@
 import React from 'react';
-import {Navbar, Container, Nav} from 'react-bootstrap';
+import {Navbar, Container} from 'react-bootstrap';
 import { Link } from 'react-router-dom';
 
 export default function NavBarComponent() {
   return (
-    <Navbar expand="lg" className="bg-body-tertiary">
-      <Container>
-        <Navbar.Brand href="#home">React-Bootstrap</Navbar.Brand>
-        <Navbar.Toggle aria-controls="basic-navbar-nav" />
-        <Navbar.Collapse id="basic-navbar-nav">
-          <Nav className="me-auto">
-            <Link to="/">Home</Link>
-            <Link to="/details"></Link>
-          </Nav>
-        </Navbar.Collapse>
-      </Container>
-    </Navbar>
+    <header>
+      <Navbar expand="lg">
+        <Container fluid className='d-flex justify-content-center'>
+          <Link to="/"><img src="https://openweathermap.org/themes/openweathermap/assets/img/logo_white_cropped.png" width="100" alt="Logo OpenWeather"/></Link>
+        </Container>
+      </Navbar>
+    </header>
+    
   )
 }

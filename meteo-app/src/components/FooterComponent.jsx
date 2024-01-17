@@ -1,11 +1,13 @@
 import React from 'react';
-import {Card} from 'react-bootstrap';
+import {Container} from 'react-bootstrap';
 
 export default function FooterComponent() {
   return (
-    <>
-        {/* Copyright */}
-        <Card className="text-center">Copyright &copy;2024</Card>
-    </>
+    <footer className='fixed-bottom py-3'>
+      <Container>
+        <p className="text-center text-light m-0">&copy; Lavinia Baratti {new Date().getFullYear()}</p>
+      </Container>
+        
+    </footer>
   )
 }
